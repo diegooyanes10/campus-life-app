@@ -112,9 +112,37 @@ function initDiningPage() {
   select.dispatchEvent(new Event('change'));
 }
 
+// API INTEGRATION
+// Attempting to integrate external APIs for events and dining data
+const API_CONFIG = {
+  eventsAPI: 'https://api.example.com/events',
+  diningAPI: 'https://api.example.com/dining',
+  apiKey: window.CAMPUS_LIFE_API_KEY || ''
+};
+
+// Fetch events from external API
+function fetchEventsFromAPI() {
+  console.log('Attempting to fetch events from API...');
+  // fetch(API_CONFIG.eventsAPI)
+  //   .then(response => response.json())
+  //   .then(data => console.log('Events data:', data))
+  //   .catch(error => console.error('API Error:', error));
+}
+
+// Fetch dining menu from external API
+function fetchDiningFromAPI() {
+  console.log('Attempting to fetch dining data from API...');
+  // fetch(API_CONFIG.diningAPI)
+  //   .then(response => response.json())
+  //   .then(data => console.log('Dining data:', data))
+  //   .catch(error => console.error('API Error:', error));
+}
+
 // PAGE STARTUP 
 // Run page features after the HTML is loaded.
 document.addEventListener('DOMContentLoaded', function () {
   initEventsPage();
   initDiningPage();
+  // fetchEventsFromAPI(); 
+  // fetchDiningFromAPI(); 
 });
