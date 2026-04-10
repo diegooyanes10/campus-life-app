@@ -72,10 +72,9 @@
           <label for="diningSelect" class="form-label select-label">Choose Dining Hall</label>
           <!-- Dropdown triggers JS update -->
           <select class="form-select dining-select" id="diningSelect">
-            <option value="" disabled selected>Select...</option>
-            <option value="north">North Hall</option>
-            <option value="south">South Hall</option>
-            <option value="central">Central Cafeteria</option>
+            <option value="alpha" selected>Alpha Dining</option>
+            <option value="westy">Westy Dining</option>
+            <option value="starbucks">Starbucks</option>
           </select>
         </div>
       </div>
@@ -90,11 +89,12 @@
             <div class="menu-card">
               <h3 class="menu-card-title">Menu of the Day</h3>
  
-              <!-- Picture of the menu placeholder -->
-              <div class="menu-img-placeholder mb-3">
-                <i class="bi bi-egg-fried menu-img-icon"></i>
-                <span class="menu-img-label">Menu Photo</span>
-              </div>
+              <img
+                id="menuImage"
+                src="images/AlphaDining.jpg"
+                alt="Alpha Dining dining photo"
+                class="menu-photo mb-3"
+              />
  
               <!-- Detailed description -->
               <p class="menu-desc">
