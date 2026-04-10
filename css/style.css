@@ -127,3 +127,78 @@ header {
   font-size: 0.9rem;
   font-weight: 600;
 }
+
+/* Events page styles */
+/* Events search area */
+.search-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-icon {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-right: none;
+}
+
+.search-bar .form-control {
+  border: 1px solid #ddd;
+  border-left: none;
+  box-shadow: none;
+}
+
+/* Event cards list */
+.event-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.event-img-placeholder {
+  width: 130px;
+  min-width: 130px;
+  height: 100px;
+  border-radius: 10px;
+  background: #b8c0d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.event-img-placeholder.ev2 {
+  background: #9dc3d5;
+}
+
+.event-img-placeholder.ev3 {
+  background: #e6b07d;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.event-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.event-meta {
+  color: #e85d04;
+}

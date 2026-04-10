@@ -61,6 +61,81 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT AREA -->
+  <main class="main-content">
+    <div class="container py-5">
+ 
+      <!-- EVENTS SEARCH -->
+      <!-- Search bar for finding events -->
+      <div class="search-wrapper mb-5">
+        <div class="input-group search-bar">
+          <span class="input-group-text search-icon">
+            <i class="bi bi-search"></i>
+          </span>
+          <input
+            type="text"
+            id="eventSearch"
+            class="form-control"
+            placeholder="Search Events"
+            aria-label="Search events"
+          />
+        </div>
+      </div>
+
+      <!-- EVENTS LIST -->
+      <!-- Event list -->
+      <div class="events-list" id="eventsList">
+ 
+        <!-- Event 1 — has event photo placeholder -->
+        <div class="event-card mb-4" data-event="spring festival">
+          <div class="event-img-placeholder">
+            <i class="bi bi-calendar-heart"></i>
+          </div>
+          <div class="event-info">
+            <h2 class="event-title">Event 1 – Spring Festival</h2>
+            <p class="event-desc">
+              Short event description. Important information about location and time.
+              <br><span class="event-meta"><i class="bi bi-geo-alt me-1"></i>Student Plaza &nbsp;|&nbsp; <i class="bi bi-clock me-1"></i>Fri, May 10 @ 6:00 PM</span>
+            </p>
+          </div>
+        </div>
+ 
+        <!-- Event 2 -->
+        <div class="event-card mb-4" data-event="study jam">
+          <div class="event-img-placeholder ev2">
+            <i class="bi bi-book-half"></i>
+          </div>
+          <div class="event-info">
+            <h2 class="event-title">Event 2 – Study Jam</h2>
+            <p class="event-desc">
+              Short event description. Important information about location and time.
+              <br><span class="event-meta"><i class="bi bi-geo-alt me-1"></i>Library Rm 204 &nbsp;|&nbsp; <i class="bi bi-clock me-1"></i>Mon, May 13 @ 3:00 PM</span>
+            </p>
+          </div>
+        </div>
+ 
+        <!-- Event 3 -->
+        <div class="event-card mb-4" data-event="career fair">
+          <div class="event-img-placeholder ev3">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <div class="event-info">
+            <h2 class="event-title">Event 3 – Career Fair</h2>
+            <p class="event-desc">
+              Short event description. Important information about location and time.
+              <br><span class="event-meta"><i class="bi bi-geo-alt me-1"></i>Main Gymnasium &nbsp;|&nbsp; <i class="bi bi-clock me-1"></i>Wed, May 15 @ 10:00 AM</span>
+            </p>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <!-- No results message (hidden by default) -->
+      <p id="noResults" class="text-center text-muted d-none mt-4">No events found.</p>
+    
+    </div>
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
