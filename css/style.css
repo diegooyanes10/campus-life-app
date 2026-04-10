@@ -1,0 +1,54 @@
+/* Basic styles for Campus App */
+
+/* Global page setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header and navigation */
+.navbar {
+  min-height: 64px;
+}
+
+.brand-icon {
+  color: #e85d04;
+  font-size: 1.4rem;
+}
+
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.nav-link {
+  color: #555 !important;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #222 !important;
+  background: #f0f0f0;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem;
+}
