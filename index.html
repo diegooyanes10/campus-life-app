@@ -64,6 +64,58 @@
     </nav>
   </header>
 
+  <!-- MAIN CONTENT AREA -->
+  <main class="main-content">
+    <div class="container py-5">
+ 
+      <!-- HOME TITLE -->
+      <!-- Campus name heading -->
+      <h1 class="campus-title text-center mb-4">Campus Name</h1>
+ 
+      <!-- HOME IMAGE PLACEHOLDER -->
+      <!-- Campus photo placeholder -->
+      <div class="campus-carousel mb-5">
+        <div class="campus-img-placeholder d-flex align-items-center justify-content-center">
+          <span class="placeholder-label">Campus Photo</span>
+        </div>
+      </div>
+ 
+      <!-- HOME QUICK LINKS -->
+      <!-- Quick update cards: Events + Dining -->
+      <div class="row g-4">
+ 
+        <!-- Upcoming Events card — Click → events.html -->
+        <div class="col-md-6">
+          <div class="info-card" id="eventsCard" role="button" onclick="window.location.href='events.html'">
+            <div class="info-card-header">
+              <i class="bi bi-calendar-event card-icon"></i>
+              <h2 class="card-heading">Upcoming Events</h2>
+            </div>
+            <!-- Quick update on the upcoming event -->
+            <p class="card-preview">Spring Festival – Fri, May 10 @ 6 PM · Student Plaza</p>
+            <p class="card-preview">Study Jam – Mon, May 13 @ 3 PM · Library Rm 204</p>
+            <span class="card-link-hint">View all events <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </div>
+ 
+        <!-- Dining card — Click → dining.html -->
+        <div class="col-md-6">
+          <div class="info-card" id="diningCard" role="button" onclick="window.location.href='dining.html'">
+            <div class="info-card-header">
+              <i class="bi bi-cup-hot card-icon"></i>
+              <h2 class="card-heading">Dining</h2>
+            </div>
+            <!-- Quick update on the upcoming dining event -->
+            <p class="card-preview">Today's Special: Grilled Chicken Bowl · $12.50</p>
+            <p class="card-preview">Dining Hall open Mon–Fri 12:00–15:00</p>
+            <span class="card-link-hint">View dining info <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center py-3">

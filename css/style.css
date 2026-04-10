@@ -52,3 +52,78 @@ header {
   flex: 1;
   padding-bottom: 2rem;
 }
+
+/* Home page styles */
+/* Home title and main image area */
+.campus-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.campus-carousel {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.campus-img-placeholder {
+  width: 100%;
+  height: 320px;
+  background: #b8c0d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campus-img-2 {
+  background: #9dc3d5;
+}
+
+.campus-img-3 {
+  background: #9fd0b3;
+}
+
+.placeholder-label {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* Home quick cards */
+.info-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.2rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-icon {
+  font-size: 1.2rem;
+  color: #e85d04;
+}
+
+.card-heading {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.card-preview {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.card-link-hint {
+  color: #e85d04;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
