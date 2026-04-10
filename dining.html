@@ -61,6 +61,81 @@
     </nav>
   </header>
 
+    <!-- MAIN CONTENT AREA -->
+  <main class="main-content">
+    <div class="container py-5">
+ 
+      <!-- DINING SELECTOR -->
+      <!-- Choose Dining Hall selector + Hours label -->
+      <div class="row align-items-end mb-4">
+        <div class="col-md-4">
+          <label for="diningSelect" class="form-label select-label">Choose Dining Hall</label>
+          <!-- Dropdown triggers JS update -->
+          <select class="form-select dining-select" id="diningSelect">
+            <option value="" disabled selected>Select...</option>
+            <option value="north">North Hall</option>
+            <option value="south">South Hall</option>
+            <option value="central">Central Cafeteria</option>
+          </select>
+        </div>
+      </div>
+ 
+      <!-- DINING CONTENT -->
+      <!-- Menu card + Hours card side by side -->
+      <div class="row g-4">
+ 
+        <!-- Menu of the Day — picture of the menu -->
+        <div class="col-md-7">
+          <div class="menu-outer-card">
+            <div class="menu-card">
+              <h3 class="menu-card-title">Menu of the Day</h3>
+ 
+              <!-- Picture of the menu placeholder -->
+              <div class="menu-img-placeholder mb-3">
+                <i class="bi bi-egg-fried menu-img-icon"></i>
+                <span class="menu-img-label">Menu Photo</span>
+              </div>
+ 
+              <!-- Detailed description -->
+              <p class="menu-desc">
+                Detailed description of the dishes available today, including vegetarian options and desserts.
+              </p>
+              <p class="menu-price">$12.50</p>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- DINING HOURS -->
+        <!-- Hours card — Dining Hall Hours -->
+        <div class="col-md-5">
+          <div class="hours-card">
+            <div class="hours-card-header">
+              <i class="bi bi-clock hours-icon"></i>
+              <h3 class="hours-card-title">Hours</h3>
+            </div>
+            <table class="hours-table w-100" id="hoursTable">
+              <tbody>
+                <tr>
+                  <td class="day">Mon–Fri</td>
+                  <td class="time">12:00 – 15:00</td>
+                </tr>
+                <tr>
+                  <td class="day">Sat</td>
+                  <td class="time">12:30 – 14:30</td>
+                </tr>
+                <tr>
+                  <td class="day closed-day">Sun</td>
+                  <td class="time closed-time">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </main>
+
     <!-- FOOTER -->
   <footer>
     <div class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
