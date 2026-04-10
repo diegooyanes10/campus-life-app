@@ -322,3 +322,55 @@ header {
 .closed-time {
   color: #e85d04;
 }
+
+/* Footer styles */
+footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #e85d04;
+}
+
+.footer-copy {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Small-screen layout adjustments */
+@media (max-width: 576px) {
+  .campus-title {
+    font-size: 1.6rem;
+  }
+
+  .campus-img-placeholder {
+    height: 220px;
+  }
+
+  .event-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-img-placeholder {
+    width: 100%;
+    min-width: unset;
+    height: 150px;
+  }
+
+  .hours-label-box {
+    margin-top: 0.7rem;
+  }
+
+  .events-map {
+    height: 250px;
+  }
+}
