@@ -17,7 +17,7 @@ function initEventsPage() {
 
     eventCards.forEach(function (card) {
       const text = card.textContent.toLowerCase();
-      if (text.indexOf(query) !== -1) {
+      if (text.includes(query)) {
         card.style.display = 'flex';
         visibleCount += 1;
       } else {
@@ -112,30 +112,28 @@ function initDiningPage() {
   select.dispatchEvent(new Event('change'));
 }
 
-// API INTEGRATION
-// Attempting to integrate external APIs for events and dining data
-const API_CONFIG = {
-  eventsAPI: 'https://api.example.com/events',
-  diningAPI: 'https://api.example.com/dining',
-  apiKey: window.CAMPUS_LIFE_API_KEY || ''
-};
+const WEATHER_API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=41.2234&longitude=-85.8530&current=temperature_2m&timezone=auto';
 
-// Fetch events from external API
-function fetchEventsFromAPI() {
-  console.log('Attempting to fetch events from API...');
-  // fetch(API_CONFIG.eventsAPI)
-  //   .then(response => response.json())
-  //   .then(data => console.log('Events data:', data))
-  //   .catch(error => console.error('API Error:', error));
-}
+// WEATHER (minimum)
+// Show only current temperature for Grace College.
+function initWeatherCard() {
+  const weatherText = document.getElementById('weatherNow');
 
-// Fetch dining menu from external API
-function fetchDiningFromAPI() {
-  console.log('Attempting to fetch dining data from API...');
-  // fetch(API_CONFIG.diningAPI)
-  //   .then(response => response.json())
-  //   .then(data => console.log('Dining data:', data))
-  //   .catch(error => console.error('API Error:', error));
+  if (!weatherText) {
+    return;
+  }
+
+  fetch(WEATHER_API_URL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      const temp = Math.round(data.current.temperature_2m);
+      weatherText.textContent = temp + ' C right now in Winona Lake';
+    })
+    .catch(function () {
+      weatherText.textContent = 'Weather not available right now.';
+    });
 }
 
 // PAGE STARTUP 
@@ -143,6 +141,5 @@ function fetchDiningFromAPI() {
 document.addEventListener('DOMContentLoaded', function () {
   initEventsPage();
   initDiningPage();
-  // fetchEventsFromAPI(); 
-  // fetchDiningFromAPI(); 
+  initWeatherCard();
 });
