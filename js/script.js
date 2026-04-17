@@ -112,7 +112,7 @@ function initDiningPage() {
   select.dispatchEvent(new Event('change'));
 }
 
-const WEATHER_API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=41.2234&longitude=-85.8530&current=temperature_2m&timezone=auto';
+const WEATHER_API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=41.2234&longitude=-85.8530&current=temperature_2m&temperature_unit=fahrenheit&timezone=auto';
 
 // WEATHER (minimum)
 // Show only current temperature for Grace College.
@@ -129,7 +129,7 @@ function initWeatherCard() {
     })
     .then(function (data) {
       const temp = Math.round(data.current.temperature_2m);
-      weatherText.textContent = temp + ' C right now in Winona Lake';
+      weatherText.textContent = temp + ' F right now in Winona Lake';
     })
     .catch(function () {
       weatherText.textContent = 'Weather not available right now.';
